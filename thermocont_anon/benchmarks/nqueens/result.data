@@ -1,0 +1,133 @@
+begin-benchmark	IndirOCaml
+script	"./ocaml/indirect.native"
+header	Indirect (OCaml)
+point	10	7.0
+point	11	37.0
+point	12	213.0
+point	13	1308.0
+end-benchmark
+
+begin-benchmark	IndirSML
+script	"indirect.sml"
+header	Indirect (SML/NJ)
+point	10	11
+point	11	64
+point	12	360
+point	13	2166
+end-benchmark
+
+begin-benchmark	ReplayOCaml
+script	"./ocaml/replay_zipper.native"
+header	Replay (OCaml)
+point	10	17.0
+point	11	101.0
+point	12	597.0
+point	13	3768.0
+end-benchmark
+
+begin-benchmark	ReplaySML
+script	"replay.sml"
+header	Replay (SML/NJ)
+point	10	29
+point	11	164
+point	12	1051
+point	13	6562
+end-benchmark
+
+begin-benchmark	ThermOCaml
+script	"./ocaml/thermometers_generic.native"
+header	Therm. (OCaml)
+point	10	41.0
+point	11	221.0
+point	12	1347.0
+point	13	8621.0
+end-benchmark
+
+begin-benchmark	ThermSML
+script	"thermometers.sml"
+header	Therm. (SML/NJ)
+point	10	60
+point	11	344
+point	12	2152
+point	13	14305
+end-benchmark
+
+begin-benchmark	OptThermOCaml
+script	"./ocaml/thermometers_optimized.native"
+header	Therm. Opt. (OCaml)
+point	10	19.0
+point	11	111.0
+point	12	650.0
+point	13	3924.0
+end-benchmark
+
+begin-benchmark	OptThermSML
+script	"thermometers_optimized.sml"
+header	Therm. Opt. (SML/NJ)
+point	10	30
+point	11	173
+point	12	1151
+point	13	6793
+end-benchmark
+
+begin-benchmark	FilOCaml
+script	"./ocaml/filinski_delimcc.native"
+header	Filinski (Delimcc, OCaml)
+point	10	35.0
+point	11	185.0
+point	12	1236.0
+point	13	14412.0
+end-benchmark
+
+begin-benchmark	FilSML
+script	"filinski_callcc.sml"
+header	Filinski (Call/cc, SML/NJ)
+point	10	15
+point	11	79
+point	12	493
+point	13	2941
+end-benchmark
+
+begin-benchmark	EffOCaml
+script	"./ocaml/effect.native"
+header	Eff. Handlers (Multicore OCaml)
+point	10	19.0
+point	11	92.0
+point	12	509.0
+point	13	2810.0
+end-benchmark
+
+begin-benchmark	Prolog
+script	"sh prolog.sh"
+header	Prolog search (SWI-Prolog)
+point	10	611.0
+point	11	2997.0
+point	12	17616.0
+end-benchmark
+
+begin-benchmark	IndirMLton
+script	"./indirect"
+header	Indirect
+point	10	7.0
+point	11	31.0
+point	12	187.0
+point	13	1129.0
+end-benchmark
+
+begin-benchmark	ReplayMLton
+script	"./replay_zipper"
+header	Replay
+point	10	16.0
+point	11	99.0
+point	12	637.0
+point	13	4295.0
+end-benchmark
+
+begin-benchmark	FilMLton
+script	"./filinski_callcc_derived_universal"
+header	Finlinski (Call/cc)
+point	10	78.0
+point	11	399.0
+point	12	2138.0
+point	13	12620.0
+end-benchmark
